@@ -6,10 +6,10 @@ import Body from './components/Body';
 class App extends Component {
   render() {
     return (
-      <body>
+      <main>
         <Header />
         <Body />
-      </body>
+      </main>
     );
   }
 }

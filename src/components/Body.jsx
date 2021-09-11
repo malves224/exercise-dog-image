@@ -18,6 +18,7 @@ class Body extends Component {
     this.setState({
       doguinhoUrl: fetchDogJson.message,
     });
+    localStorage.setItem('lastUrlDog', fetchDogJson.message);
   }
 
   render() {
