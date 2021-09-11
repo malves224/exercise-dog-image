@@ -4,7 +4,7 @@ class Body extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      doguinhoUrl: '',
+      doguinhoUrl: 'carregando...',
     };
   }
 
@@ -23,8 +23,15 @@ class Body extends Component {
 
   render() {
     const { doguinhoUrl } = this.state;
+    const urlForFetch = 'https://dog.ceo/api/breeds/image/random';
     return (
       <section className="section">
+        <button
+          onClick={ () => this.fetchDoguinho(urlForFetch) }
+          type="button"
+        >
+          Change dóginho
+        </button>
         <div className="card-dog">
           <img src={ doguinhoUrl } alt="" />
         </div>
