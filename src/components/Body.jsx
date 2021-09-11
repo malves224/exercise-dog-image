@@ -24,9 +24,11 @@ class Body extends Component {
   render() {
     const { doguinhoUrl } = this.state;
     return (
-      <div className="cardDog">
-        <img src={ doguinhoUrl } alt="" />
-      </div>
+      <section className="section">
+        <div className="card-dog">
+          <img src={ doguinhoUrl } alt="" />
+        </div>
+      </section>
     );
   }
 }
